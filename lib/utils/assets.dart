@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+
 
 class Assets {
   static const String flutterBlue = "assets/png/Flutter_Logo_blue.png";
@@ -9,6 +9,7 @@ class Assets {
   static const String googleDevelopers = "assets/png/google_developer_logo.png";
   static const String jetBrain = "assets/png/jetbrains.png";
   static const String flutterLogo = "assets/png/logo_lockup_flutter_horizontal.png";
+  static const String eventLogo = "assets/png/main_event_logo.png";
 
   // Social Icon
   static const String facebook = "assets/icons/social/facebook.png";
