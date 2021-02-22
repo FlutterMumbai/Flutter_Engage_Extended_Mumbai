@@ -1,11 +1,11 @@
 {
-    "name": "flutterengagemumbai",
-    "short_name": "flutterengagemumbai",
+    "name": "Flutter Engage Extended Mumbai",
+    "short_name": "Flutter Engage Extended Mumbai",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "Flutter Engage Extened Mumbai",
+    "background_color": "#FFFFFF",
+    "theme_color": "#FFFFFF",
+    "description": "Flutter Engage Extended Mumbai",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
