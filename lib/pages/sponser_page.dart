@@ -1,62 +1,111 @@
 import 'package:flutter/material.dart';
-import 'package:flutterengagemumbai/themes/custom_colors.dart';
 import 'package:flutterengagemumbai/utils/assets.dart';
-
-
+import 'package:flutterengagemumbai/services/responsiveness.dart';
 
 class SponserPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: MediaQuery.of(context).size.height,
-      width: MediaQuery.of(context).size.width,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text(
-            "Powered by",
-            style: Theme.of(context).textTheme.headline2,
-          ),
-          SizedBox(height: 10.0),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Image.asset(
-                Assets.googleDevelopers,
-              ),
-              Image.asset(
-                Assets.flutterLogo,
-                scale: 7.0,
-              ),
-              Image.asset(
-                Assets.jetBrain,
-                scale: 9.0,
-              ),
-            ],
-          ),
-          SizedBox(height: 50.0),
-          Text(
-            "Community Partner",
-            style: Theme.of(context).textTheme.headline3,
-          ),
-          SizedBox(height: 30.0),
-          Row(
+    return sponserPageContext(context);
+  }
+
+  Container sponserPageContext(BuildContext context) {
+    if (Responsiveness.isLargeScreen(context)) {
+      return Container(
+        height: MediaQuery.of(context).size.height / 1.5,
+        width: MediaQuery.of(context).size.width,
+        child: Center(
+          child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              FlutterLogo(
-                size: 70.0,
-              ),
               Text(
-                "Flutter India",
-                style: Theme.of(context).textTheme.headline3!.copyWith(
-                  color: CustomColors.GoogleGrey600,
-                ),
+                "Powered by",
+                style: Theme.of(context).textTheme.headline2,
+              ),
+              SizedBox(height: 10.0),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Image.asset(
+                    Assets.flutterLogo,
+                    scale: 7.0,
+                  ),
+                  Image.asset(
+                    Assets.googleDevelopers,
+                  ),
+                  Image.asset(
+                    Assets.jetBrain,
+                    scale: 9.0,
+                  ),
+                ],
               ),
             ],
           ),
-        ],
-      ),
-    );
+        ),
+      );
+    } else if(Responsiveness.isMediumScreen(context)) {
+      return Container(
+        width: MediaQuery.of(context).size.width,
+        padding: EdgeInsets.symmetric(vertical: 20.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              "Powered by",
+              style: Theme.of(context).textTheme.headline3,
+            ),
+            SizedBox(height: 15.0),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Image.asset(
+                  Assets.flutterLogo,
+                  scale: 10.0,
+                ),
+                Image.asset(
+                  Assets.googleDevelopers,
+                  scale: 1.5,
+                ),
+              ],
+            ),
+            SizedBox(height: 15.0),
+            Image.asset(
+              Assets.jetBrain,
+              scale: 13.0,
+            ),
+          ],
+        ),
+      );
+    }
+    else {
+      return Container(
+        width: MediaQuery.of(context).size.width,
+        height: MediaQuery.of(context).size.height / 1.5,
+        padding: EdgeInsets.symmetric(vertical: 10.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Text(
+              "Powered by",
+              style: Theme.of(context).textTheme.headline4,
+            ),
+            //SizedBox(height: 20.0),
+            Image.asset(
+              Assets.flutterLogo,
+              scale: 12.0,
+            ),
+           // SizedBox(height: 30.0),
+            Image.asset(
+              Assets.googleDevelopers,
+              scale: 1.7,
+            ),
+            // SizedBox(height: 20.0),
+            Image.asset(
+              Assets.jetBrain,
+              scale: 17.0,
+            ),
+          ],
+        ),
+      );
+    }
   }
 }
