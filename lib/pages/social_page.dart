@@ -15,7 +15,7 @@ class SocialPage extends StatelessWidget {
     if (Responsiveness.isLargeScreen(context)) {
       return Container(
         width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height,
+        height: MediaQuery.of(context).size.height / 1.3,
         child: Row(
           children: [
             Container(
@@ -193,7 +193,6 @@ class SocialPage extends StatelessWidget {
     } else if (Responsiveness.isMediumScreen(context)) {
       return Container(
         width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height,
         child: Column(
           children: [
             Container(
@@ -206,10 +205,9 @@ class SocialPage extends StatelessWidget {
             ),
             Container(
               width: MediaQuery.of(context).size.width,
-              padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 10.0),
+              height: MediaQuery.of(context).size.height / 2.3,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
                     "Get involved",
@@ -217,6 +215,7 @@ class SocialPage extends StatelessWidget {
                   ),
                   SizedBox(height: 40.0),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
                         "Official hashtag",
@@ -230,9 +229,9 @@ class SocialPage extends StatelessWidget {
                         child: Text(
                           "#FlutterEngage",
                           style:
-                          Theme.of(context).textTheme.headline6!.copyWith(
-                            color: Colors.blue,
-                          ),
+                              Theme.of(context).textTheme.headline6!.copyWith(
+                                    color: Colors.blue,
+                                  ),
                         ),
                       ),
                       SizedBox(width: 7.0),
@@ -242,15 +241,16 @@ class SocialPage extends StatelessWidget {
                         child: Text(
                           "#FlutterMumbai",
                           style:
-                          Theme.of(context).textTheme.headline6!.copyWith(
-                            color: Colors.blue,
-                          ),
+                              Theme.of(context).textTheme.headline6!.copyWith(
+                                    color: Colors.blue,
+                                  ),
                         ),
                       ),
                     ],
                   ),
-                  SizedBox(height: 10.0),
+                  SizedBox(height: 15.0),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
                         "Flutter Questions? Tweet with",
@@ -264,22 +264,23 @@ class SocialPage extends StatelessWidget {
                         child: Text(
                           "#AskFlutterMumbai",
                           style:
-                          Theme.of(context).textTheme.headline6!.copyWith(
-                            color: Colors.blue,
-                          ),
+                              Theme.of(context).textTheme.headline6!.copyWith(
+                                    color: Colors.blue,
+                                  ),
                         ),
                       ),
                     ],
                   ),
-                  SizedBox(height: 10.0),
+                  SizedBox(height: 15.0),
                   Text(
                     "Follow us on",
                     style: Theme.of(context).textTheme.headline5!.copyWith(
-                      fontWeight: FontWeight.w500,
-                    ),
+                          fontWeight: FontWeight.w500,
+                        ),
                   ),
                   SizedBox(height: 7.0),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       TextButton(
                         onPressed: () => Launch.launchUrl(
@@ -288,9 +289,9 @@ class SocialPage extends StatelessWidget {
                         child: Text(
                           "Twitter",
                           style:
-                          Theme.of(context).textTheme.headline6!.copyWith(
-                            color: CustomColors.PrimaryC,
-                          ),
+                              Theme.of(context).textTheme.headline6!.copyWith(
+                                    color: CustomColors.PrimaryC,
+                                  ),
                         ),
                       ),
                       SizedBox(width: 15.0),
@@ -301,9 +302,9 @@ class SocialPage extends StatelessWidget {
                         child: Text(
                           "Facebook",
                           style:
-                          Theme.of(context).textTheme.headline6!.copyWith(
-                            color: CustomColors.PrimaryC,
-                          ),
+                              Theme.of(context).textTheme.headline6!.copyWith(
+                                    color: CustomColors.PrimaryC,
+                                  ),
                         ),
                       ),
                       SizedBox(width: 15.0),
@@ -314,9 +315,9 @@ class SocialPage extends StatelessWidget {
                         child: Text(
                           "Instagram",
                           style:
-                          Theme.of(context).textTheme.headline6!.copyWith(
-                            color: CustomColors.PrimaryC,
-                          ),
+                              Theme.of(context).textTheme.headline6!.copyWith(
+                                    color: CustomColors.PrimaryC,
+                                  ),
                         ),
                       ),
                       SizedBox(width: 15.0),
@@ -327,21 +328,20 @@ class SocialPage extends StatelessWidget {
                         child: Text(
                           "YouTube",
                           style:
-                          Theme.of(context).textTheme.headline6!.copyWith(
-                            color: CustomColors.PrimaryC,
-                          ),
+                              Theme.of(context).textTheme.headline6!.copyWith(
+                                    color: CustomColors.PrimaryC,
+                                  ),
                         ),
                       ),
                       SizedBox(width: 15.0),
                       TextButton(
-                        onPressed: () =>
-                            Launch.launchUrl(SocialUrls.telegram),
+                        onPressed: () => Launch.launchUrl(SocialUrls.telegram),
                         child: Text(
                           "Telegram",
                           style:
-                          Theme.of(context).textTheme.headline6!.copyWith(
-                            color: CustomColors.PrimaryC,
-                          ),
+                              Theme.of(context).textTheme.headline6!.copyWith(
+                                    color: CustomColors.PrimaryC,
+                                  ),
                         ),
                       ),
                       SizedBox(width: 15.0),
@@ -352,9 +352,9 @@ class SocialPage extends StatelessWidget {
                         child: Text(
                           "Meetup",
                           style:
-                          Theme.of(context).textTheme.headline6!.copyWith(
-                            color: CustomColors.PrimaryC,
-                          ),
+                              Theme.of(context).textTheme.headline6!.copyWith(
+                                    color: CustomColors.PrimaryC,
+                                  ),
                         ),
                       ),
                     ],
@@ -434,10 +434,9 @@ class SocialPage extends StatelessWidget {
                       ),
                       child: Text(
                         "#AskFlutterMumbai",
-                        style:
-                        Theme.of(context).textTheme.subtitle1!.copyWith(
-                          color: Colors.blue,
-                        ),
+                        style: Theme.of(context).textTheme.subtitle1!.copyWith(
+                              color: Colors.blue,
+                            ),
                       ),
                     ),
                     SizedBox(height: 20.0),
@@ -502,9 +501,9 @@ class SocialPage extends StatelessWidget {
                           child: Text(
                             "YouTube",
                             style:
-                            Theme.of(context).textTheme.subtitle1!.copyWith(
-                              color: CustomColors.PrimaryC,
-                            ),
+                                Theme.of(context).textTheme.subtitle1!.copyWith(
+                                      color: CustomColors.PrimaryC,
+                                    ),
                           ),
                         ),
                         SizedBox(width: 15.0),
@@ -514,9 +513,9 @@ class SocialPage extends StatelessWidget {
                           child: Text(
                             "Telegram",
                             style:
-                            Theme.of(context).textTheme.subtitle1!.copyWith(
-                              color: CustomColors.PrimaryC,
-                            ),
+                                Theme.of(context).textTheme.subtitle1!.copyWith(
+                                      color: CustomColors.PrimaryC,
+                                    ),
                           ),
                         ),
                         SizedBox(width: 15.0),
@@ -527,9 +526,9 @@ class SocialPage extends StatelessWidget {
                           child: Text(
                             "Meetup",
                             style:
-                            Theme.of(context).textTheme.subtitle1!.copyWith(
-                              color: CustomColors.PrimaryC,
-                            ),
+                                Theme.of(context).textTheme.subtitle1!.copyWith(
+                                      color: CustomColors.PrimaryC,
+                                    ),
                           ),
                         ),
                       ],
