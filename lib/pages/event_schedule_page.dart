@@ -32,7 +32,7 @@ class EventSchedulePage extends StatelessWidget {
               SizedBox(
                 height: 70.0,
               ),
-              Flexible(
+              Container(
                 child: Image.asset(
                   Assets.liquidArt,
                   width: MediaQuery.of(context).size.width,
@@ -82,23 +82,21 @@ class EventSchedulePage extends StatelessWidget {
     } else {
       return Container(
         width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height / 1.5,
+        height: MediaQuery.of(context).size.height / 1.7,
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
                 "Event Schedule",
-                style: Theme.of(context).textTheme.headline5,
+                style: Theme.of(context).textTheme.headline4,
               ),
               SizedBox(
                 height: 10.0,
               ),
               Text(
                 "To be announce soon",
-                style: Theme.of(context).textTheme.subtitle1!.copyWith(
-                  fontSize: 15.0,
-                ),
+                style: Theme.of(context).textTheme.headline6,
               ),
               SizedBox(
                 height: 70.0,
