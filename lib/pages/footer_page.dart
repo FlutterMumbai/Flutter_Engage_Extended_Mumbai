@@ -14,18 +14,19 @@ class FooterPage extends StatelessWidget {
     if (Responsiveness.isLargeScreen(context)) {
       return Container(
         width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height / 3,
-        padding: EdgeInsets.symmetric(horizontal: 50.0, vertical: 7.0),
+        height: MediaQuery.of(context).size.height / 2.5,
+        padding: EdgeInsets.symmetric(horizontal: 50.0, vertical: 13.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
               "Flutter Mumbai",
+              textAlign: TextAlign.center,
               style: Theme.of(context).textTheme.headline3!.copyWith(
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w500,
               ),
             ),
-            SizedBox(height: 30.0),
+            SizedBox(height: 20.0),
             Row(
               children: [
                 TextButton(
@@ -36,9 +37,7 @@ class FooterPage extends StatelessWidget {
                   ),
                   child: Text(
                     "Code of Conduct",
-                    style: Theme.of(context).textTheme.headline6!.copyWith(
-                      fontWeight: FontWeight.w700,
-                    ),
+                    style: Theme.of(context).textTheme.headline6,
                   ),
                 ),
                 SizedBox(width: 30.0),
@@ -48,9 +47,7 @@ class FooterPage extends StatelessWidget {
                   ),
                   child: Text(
                     "Community Guidelines",
-                    style: Theme.of(context).textTheme.headline6!.copyWith(
-                      fontWeight: FontWeight.w700,
-                    ),
+                    style: Theme.of(context).textTheme.headline6,
                   ),
                 ),
               ],
@@ -73,10 +70,10 @@ class FooterPage extends StatelessWidget {
     else if(Responsiveness.isMediumScreen(context)) {
       return Container(
         width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height / 3,
-        padding: EdgeInsets.symmetric(horizontal: 50.0, vertical: 7.0),
+        height: MediaQuery.of(context).size.height / 2.7,
+        padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 15.0),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(
               "Flutter Mumbai",
@@ -86,6 +83,7 @@ class FooterPage extends StatelessWidget {
             ),
             SizedBox(height: 30.0),
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 TextButton(
                   onPressed: () => Navigator.of(context).push(
@@ -95,7 +93,7 @@ class FooterPage extends StatelessWidget {
                   ),
                   child: Text(
                     "Code of Conduct",
-                    style: Theme.of(context).textTheme.headline6!.copyWith(
+                    style: Theme.of(context).textTheme.headline5!.copyWith(
                       fontWeight: FontWeight.w700,
                     ),
                   ),
@@ -107,7 +105,7 @@ class FooterPage extends StatelessWidget {
                   ),
                   child: Text(
                     "Community Guidelines",
-                    style: Theme.of(context).textTheme.headline6!.copyWith(
+                    style: Theme.of(context).textTheme.headline5!.copyWith(
                       fontWeight: FontWeight.w700,
                     ),
                   ),
@@ -140,7 +138,7 @@ class FooterPage extends StatelessWidget {
             Text(
               "Flutter Mumbai",
               style: Theme.of(context).textTheme.headline5!.copyWith(
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w500,
               ),
             ),
             SizedBox(height: 15.0),
@@ -156,7 +154,7 @@ class FooterPage extends StatelessWidget {
                   child: Text(
                     "Code of Conduct",
                     style: Theme.of(context).textTheme.subtitle2!.copyWith(
-                      fontWeight: FontWeight.w700,
+                      fontWeight: FontWeight.w600,
                     ),
                   ),
                 ),
@@ -168,7 +166,7 @@ class FooterPage extends StatelessWidget {
                   child: Text(
                     "Community Guidelines",
                     style: Theme.of(context).textTheme.subtitle2!.copyWith(
-                      fontWeight: FontWeight.w700,
+                      fontWeight: FontWeight.w600,
                     ),
                   ),
                 ),
