@@ -87,8 +87,8 @@ class LandingPage extends StatelessWidget {
                     style: ButtonStyle(
                       padding: MaterialStateProperty.all<EdgeInsets>(
                         EdgeInsets.symmetric(
-                          vertical: 17.0,
-                          horizontal: 100.0,
+                          vertical: 13.0,
+                          horizontal: 130.0,
                         ),
                       ),
                       backgroundColor: MaterialStateProperty.all<Color>(
@@ -230,7 +230,7 @@ class LandingPage extends StatelessWidget {
         child: Column(
           children: [
             Container(
-              height: MediaQuery.of(context).size.height / 1.7,
+              height: MediaQuery.of(context).size.height / 1.5,
               width: MediaQuery.of(context).size.width,
               padding: EdgeInsets.symmetric(horizontal: 7.0),
               child: Center(
@@ -242,7 +242,7 @@ class LandingPage extends StatelessWidget {
             ),
             Container(
               width: MediaQuery.of(context).size.width,
-              padding: EdgeInsets.symmetric(vertical: 20.0),
+              height: MediaQuery.of(context).size.height / 1.5,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -280,7 +280,6 @@ class LandingPage extends StatelessWidget {
                   Text(
                     "March 20, 2021,",
                     style: Theme.of(context).textTheme.headline5!.copyWith(
-                          fontSize: 20.0,
                           color: CustomColors.DarkGrey,
                           fontWeight: FontWeight.w500,
                         ),
@@ -289,9 +288,7 @@ class LandingPage extends StatelessWidget {
                   Text(
                     "19:00 - 21:00 IST",
                     style: Theme.of(context).textTheme.headline5!.copyWith(
-                          fontSize: 20.0,
                           color: CustomColors.DarkGrey,
-                          fontWeight: FontWeight.w700,
                         ),
                   ),
                   SizedBox(height: 20.0),
@@ -302,8 +299,8 @@ class LandingPage extends StatelessWidget {
                     style: ButtonStyle(
                       padding: MaterialStateProperty.all<EdgeInsets>(
                         EdgeInsets.symmetric(
-                          vertical: 15.0,
-                          horizontal: 70.0,
+                          vertical: 17.0,
+                          horizontal: 150.0,
                         ),
                       ),
                       backgroundColor: MaterialStateProperty.all<Color>(
@@ -314,7 +311,6 @@ class LandingPage extends StatelessWidget {
                       "RSVP",
                       textAlign: TextAlign.center,
                       style: Theme.of(context).textTheme.headline6!.copyWith(
-                            fontSize: 18.0,
                             color: Colors.white,
                           ),
                     ),
