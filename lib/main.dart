@@ -13,6 +13,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "Flutter Engage Extended Mumbai",
       theme: Themes.lightTheme,
+      darkTheme: Themes.darkTheme,
+      themeMode: ThemeMode.system,
       home: Home(),
     );
   }
