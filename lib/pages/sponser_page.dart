@@ -11,7 +11,7 @@ class SponserPage extends StatelessWidget {
   Container sponserPageContext(BuildContext context) {
     if (Responsiveness.isLargeScreen(context)) {
       return Container(
-        height: MediaQuery.of(context).size.height / 1.5,
+        height: MediaQuery.of(context).size.height / 1.3,
         width: MediaQuery.of(context).size.width,
         child: Center(
           child: Column(
@@ -42,35 +42,32 @@ class SponserPage extends StatelessWidget {
           ),
         ),
       );
-    } else if(Responsiveness.isMediumScreen(context)) {
+    }
+    else if(Responsiveness.isMediumScreen(context)) {
       return Container(
         width: MediaQuery.of(context).size.width,
-        padding: EdgeInsets.symmetric(vertical: 20.0),
+        height: MediaQuery.of(context).size.height / 1.3,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
               "Powered by",
-              style: Theme.of(context).textTheme.headline3,
+              style: Theme.of(context).textTheme.headline2,
             ),
-            SizedBox(height: 15.0),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Image.asset(
-                  Assets.flutterLogo,
-                  scale: 10.0,
-                ),
-                Image.asset(
-                  Assets.googleDevelopers,
-                  scale: 1.5,
-                ),
-              ],
+            SizedBox(height: 50.0),
+            Image.asset(
+              Assets.flutterLogo,
+              scale: 8.0,
             ),
-            SizedBox(height: 15.0),
+            SizedBox(height: 50.0),
+            Image.asset(
+              Assets.googleDevelopers,
+              scale: 1.0,
+            ),
+            SizedBox(height: 50.0),
             Image.asset(
               Assets.jetBrain,
-              scale: 13.0,
+              scale: 9.0,
             ),
           ],
         ),
@@ -79,8 +76,7 @@ class SponserPage extends StatelessWidget {
     else {
       return Container(
         width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height / 1.5,
-        padding: EdgeInsets.symmetric(vertical: 10.0),
+        height: MediaQuery.of(context).size.height / 1.3,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
