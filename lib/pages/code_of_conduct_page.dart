@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-
 import 'package:flutterengagemumbai/themes/custom_colors.dart';
 
-import '../themes/custom_colors.dart';
+
 
 class CodeOfConductPage extends StatelessWidget {
   final ScrollController _scrollCotroller = ScrollController();
