@@ -28,6 +28,7 @@ class Home extends StatelessWidget {
           padding: const EdgeInsets.all(0.0),
           physics: BouncingScrollPhysics(),
           controller: _controller,
+
           children: buildList,
         ),
       ),
