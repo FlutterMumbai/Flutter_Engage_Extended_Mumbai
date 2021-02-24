@@ -10,6 +10,7 @@ class Assets {
   static const String jetBrain = "assets/png/jetbrains.png";
   static const String flutterLogo = "assets/png/logo_lockup_flutter_horizontal.png";
   static const String eventLogo = "assets/png/main_event_logo.png";
+  static const String madeWithFlutter = "assets/png/made_with_flutter.png";
 
   // Social Icon
   static const String facebook = "assets/icons/social/facebook.png";
