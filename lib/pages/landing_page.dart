@@ -65,18 +65,14 @@ class LandingPage extends StatelessWidget {
                   Text(
                     "March 20, 2021,",
                     style: Theme.of(context).textTheme.headline5!.copyWith(
-                          fontSize: 25.0,
                           color: CustomColors.DarkGrey,
-                          fontWeight: FontWeight.w500,
                         ),
                   ),
                   SizedBox(height: 3.0),
                   Text(
                     "19:00 - 21:00 IST",
                     style: Theme.of(context).textTheme.headline5!.copyWith(
-                          fontSize: 23.0,
                           color: CustomColors.DarkGrey,
-                          fontWeight: FontWeight.w700,
                         ),
                   ),
                   SizedBox(height: 30.0),
@@ -170,18 +166,14 @@ class LandingPage extends StatelessWidget {
                   Text(
                     "March 20, 2021,",
                     style: Theme.of(context).textTheme.headline5!.copyWith(
-                          fontSize: 25.0,
                           color: CustomColors.DarkGrey,
-                          fontWeight: FontWeight.w500,
                         ),
                   ),
                   SizedBox(height: 3.0),
                   Text(
                     "19:00 - 21:00 IST",
                     style: Theme.of(context).textTheme.headline5!.copyWith(
-                          fontSize: 23.0,
                           color: CustomColors.DarkGrey,
-                          fontWeight: FontWeight.w700,
                         ),
                   ),
                   SizedBox(height: 30.0),
@@ -230,64 +222,58 @@ class LandingPage extends StatelessWidget {
         child: Column(
           children: [
             Container(
-              height: MediaQuery.of(context).size.height / 1.5,
               width: MediaQuery.of(context).size.width,
-              padding: EdgeInsets.symmetric(horizontal: 7.0),
+              padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 35.0),
               child: Center(
                 child: Image.asset(
                   Assets.eventLogo,
+                  scale: 9.0,
                   filterQuality: FilterQuality.high,
                 ),
               ),
             ),
             Container(
               width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height / 1.5,
+              padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
                     "Flutter Engage",
-                    style: Theme.of(context).textTheme.headline2!.copyWith(
-                          fontSize: 35.0,
+                    style: Theme.of(context).textTheme.headline4!.copyWith(
                           fontWeight: FontWeight.w500,
                         ),
                   ),
                   SizedBox(height: 7.0),
                   Text(
                     "Extended Mumbai",
-                    style: Theme.of(context).textTheme.headline4!.copyWith(
-                          fontSize: 20.0,
-                          fontWeight: FontWeight.bold,
+                    style: Theme.of(context).textTheme.headline6!.copyWith(
                           color: CustomColors.FlutterPrimary,
                         ),
                   ),
                   SizedBox(height: 20.0),
                   Text(
                     "Presented by",
-                    style: Theme.of(context).textTheme.headline6!.copyWith(
-                          fontSize: 18.0,
+                    style: Theme.of(context).textTheme.subtitle1!.copyWith(
                           color: CustomColors.Grey,
-                          fontWeight: FontWeight.w500,
                         ),
                   ),
                   SizedBox(height: 5.0),
                   Text(
                     "Flutter Mumbai",
-                    style: Theme.of(context).textTheme.headline5,
+                    style: Theme.of(context).textTheme.headline6,
                   ),
                   SizedBox(height: 20.0),
                   Text(
                     "March 20, 2021,",
-                    style: Theme.of(context).textTheme.headline5!.copyWith(
+                    style: Theme.of(context).textTheme.subtitle1!.copyWith(
                           color: CustomColors.DarkGrey,
-                          fontWeight: FontWeight.w500,
                         ),
                   ),
                   SizedBox(height: 3.0),
                   Text(
                     "19:00 - 21:00 IST",
-                    style: Theme.of(context).textTheme.headline5!.copyWith(
+                    style: Theme.of(context).textTheme.subtitle1!.copyWith(
                           color: CustomColors.DarkGrey,
                         ),
                   ),
@@ -300,7 +286,7 @@ class LandingPage extends StatelessWidget {
                       padding: MaterialStateProperty.all<EdgeInsets>(
                         EdgeInsets.symmetric(
                           vertical: 17.0,
-                          horizontal: 150.0,
+                          horizontal: 100.0,
                         ),
                       ),
                       backgroundColor: MaterialStateProperty.all<Color>(
@@ -310,7 +296,7 @@ class LandingPage extends StatelessWidget {
                     child: Text(
                       "RSVP",
                       textAlign: TextAlign.center,
-                      style: Theme.of(context).textTheme.headline6!.copyWith(
+                      style: Theme.of(context).textTheme.subtitle1!.copyWith(
                             color: Colors.white,
                           ),
                     ),
