@@ -378,162 +378,164 @@ class SocialPage extends StatelessWidget {
                 scale: 20.0,
               ),
             ),
-            Container(
-              width: MediaQuery.of(context).size.width,
-              padding: EdgeInsets.only(left: 10.0, top: 15.0, bottom: 10.0),
-              child: Center(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      "Get involved",
-                      style: Theme.of(context).textTheme.headline4,
-                    ),
-                    SizedBox(height: 30.0),
-                    Text(
-                      "Official hashtag",
-                      style: Theme.of(context).textTheme.headline6,
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        TextButton(
-                          onPressed: () => Launch.launchUrl(
-                            SocialUrls.engageTagUrl,
-                          ),
-                          child: Text(
-                            "#FlutterEngage",
-                            style:
-                                Theme.of(context).textTheme.subtitle1!.copyWith(
-                                      color: Colors.blue,
-                                    ),
-                          ),
-                        ),
-                        SizedBox(width: 7.0),
-                        TextButton(
-                          onPressed: () =>
-                              Launch.launchUrl(SocialUrls.flutterMumTagUrl),
-                          child: Text(
-                            "#FlutterMumbai",
-                            style:
-                                Theme.of(context).textTheme.subtitle1!.copyWith(
-                                      color: Colors.blue,
-                                    ),
-                          ),
-                        ),
-                      ],
-                    ),
-                    SizedBox(height: 20.0),
-                    Text(
-                      "Flutter Questions? Tweet with",
-                      style: Theme.of(context).textTheme.headline6,
-                    ),
-                    TextButton(
-                      onPressed: () => Launch.launchUrl(
-                        SocialUrls.askFlutterMumUrl,
+            Flexible(
+              child: Container(
+                width: MediaQuery.of(context).size.width,
+                padding: EdgeInsets.symmetric(vertical: 15.0),
+                child: Center(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Get involved",
+                        style: Theme.of(context).textTheme.headline5,
                       ),
-                      child: Text(
-                        "#AskFlutterMumbai",
+                      SizedBox(height: 20.0),
+                      Text(
+                        "Official hashtag",
+                        style: Theme.of(context).textTheme.subtitle1,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          TextButton(
+                            onPressed: () => Launch.launchUrl(
+                              SocialUrls.engageTagUrl,
+                            ),
+                            child: Text(
+                              "#FlutterEngage",
+                              style:
+                                  Theme.of(context).textTheme.subtitle2!.copyWith(
+                                        color: Colors.blue,
+                                      ),
+                            ),
+                          ),
+                          SizedBox(width: 7.0),
+                          TextButton(
+                            onPressed: () =>
+                                Launch.launchUrl(SocialUrls.flutterMumTagUrl),
+                            child: Text(
+                              "#FlutterMumbai",
+                              style:
+                                  Theme.of(context).textTheme.subtitle2!.copyWith(
+                                        color: Colors.blue,
+                                      ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 20.0),
+                      Text(
+                        "Flutter Questions? Tweet with",
+                        style: Theme.of(context).textTheme.subtitle1,
+                      ),
+                      TextButton(
+                        onPressed: () => Launch.launchUrl(
+                          SocialUrls.askFlutterMumUrl,
+                        ),
+                        child: Text(
+                          "#AskFlutterMumbai",
+                          style: Theme.of(context).textTheme.subtitle2!.copyWith(
+                                color: Colors.blue,
+                              ),
+                        ),
+                      ),
+                      SizedBox(height: 20.0),
+                      Text(
+                        "Follow us on",
                         style: Theme.of(context).textTheme.subtitle1!.copyWith(
-                              color: Colors.blue,
+                              fontWeight: FontWeight.w500,
                             ),
                       ),
-                    ),
-                    SizedBox(height: 20.0),
-                    Text(
-                      "Follow us on",
-                      style: Theme.of(context).textTheme.headline6!.copyWith(
-                            fontWeight: FontWeight.w500,
+                      SizedBox(height: 10.0),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          TextButton(
+                            onPressed: () => Launch.launchUrl(
+                              SocialUrls.twitter,
+                            ),
+                            child: Text(
+                              "Twitter",
+                              style:
+                                  Theme.of(context).textTheme.subtitle2!.copyWith(
+                                        color: CustomColors.PrimaryC,
+                                      ),
+                            ),
                           ),
-                    ),
-                    SizedBox(height: 7.0),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        TextButton(
-                          onPressed: () => Launch.launchUrl(
-                            SocialUrls.twitter,
+                          SizedBox(width: 15.0),
+                          TextButton(
+                            onPressed: () => Launch.launchUrl(
+                              SocialUrls.facebook,
+                            ),
+                            child: Text(
+                              "Facebook",
+                              style:
+                                  Theme.of(context).textTheme.subtitle2!.copyWith(
+                                        color: CustomColors.PrimaryC,
+                                      ),
+                            ),
                           ),
-                          child: Text(
-                            "Twitter",
-                            style:
-                                Theme.of(context).textTheme.subtitle1!.copyWith(
-                                      color: CustomColors.PrimaryC,
-                                    ),
+                          SizedBox(width: 15.0),
+                          TextButton(
+                            onPressed: () => Launch.launchUrl(
+                              SocialUrls.instagram,
+                            ),
+                            child: Text(
+                              "Instagram",
+                              style:
+                                  Theme.of(context).textTheme.subtitle2!.copyWith(
+                                        color: CustomColors.PrimaryC,
+                                      ),
+                            ),
                           ),
-                        ),
-                        SizedBox(width: 15.0),
-                        TextButton(
-                          onPressed: () => Launch.launchUrl(
-                            SocialUrls.facebook,
+                        ],
+                      ),
+                      SizedBox(height: 5.0),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          TextButton(
+                            onPressed: () => Launch.launchUrl(
+                              SocialUrls.youtube,
+                            ),
+                            child: Text(
+                              "YouTube",
+                              style:
+                                  Theme.of(context).textTheme.subtitle2!.copyWith(
+                                        color: CustomColors.PrimaryC,
+                                      ),
+                            ),
                           ),
-                          child: Text(
-                            "Facebook",
-                            style:
-                                Theme.of(context).textTheme.subtitle1!.copyWith(
-                                      color: CustomColors.PrimaryC,
-                                    ),
+                          SizedBox(width: 15.0),
+                          TextButton(
+                            onPressed: () =>
+                                Launch.launchUrl(SocialUrls.telegram),
+                            child: Text(
+                              "Telegram",
+                              style:
+                                  Theme.of(context).textTheme.subtitle2!.copyWith(
+                                        color: CustomColors.PrimaryC,
+                                      ),
+                            ),
                           ),
-                        ),
-                        SizedBox(width: 15.0),
-                        TextButton(
-                          onPressed: () => Launch.launchUrl(
-                            SocialUrls.instagram,
+                          SizedBox(width: 15.0),
+                          TextButton(
+                            onPressed: () => Launch.launchUrl(
+                              SocialUrls.meetup,
+                            ),
+                            child: Text(
+                              "Meetup",
+                              style:
+                                  Theme.of(context).textTheme.subtitle2!.copyWith(
+                                        color: CustomColors.PrimaryC,
+                                      ),
+                            ),
                           ),
-                          child: Text(
-                            "Instagram",
-                            style:
-                                Theme.of(context).textTheme.subtitle1!.copyWith(
-                                      color: CustomColors.PrimaryC,
-                                    ),
-                          ),
-                        ),
-                      ],
-                    ),
-                    SizedBox(height: 5.0),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        TextButton(
-                          onPressed: () => Launch.launchUrl(
-                            SocialUrls.youtube,
-                          ),
-                          child: Text(
-                            "YouTube",
-                            style:
-                                Theme.of(context).textTheme.subtitle1!.copyWith(
-                                      color: CustomColors.PrimaryC,
-                                    ),
-                          ),
-                        ),
-                        SizedBox(width: 15.0),
-                        TextButton(
-                          onPressed: () =>
-                              Launch.launchUrl(SocialUrls.telegram),
-                          child: Text(
-                            "Telegram",
-                            style:
-                                Theme.of(context).textTheme.subtitle1!.copyWith(
-                                      color: CustomColors.PrimaryC,
-                                    ),
-                          ),
-                        ),
-                        SizedBox(width: 15.0),
-                        TextButton(
-                          onPressed: () => Launch.launchUrl(
-                            SocialUrls.meetup,
-                          ),
-                          child: Text(
-                            "Meetup",
-                            style:
-                                Theme.of(context).textTheme.subtitle1!.copyWith(
-                                      color: CustomColors.PrimaryC,
-                                    ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
