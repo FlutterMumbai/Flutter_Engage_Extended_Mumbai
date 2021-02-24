@@ -3,6 +3,7 @@ import 'package:flutterengagemumbai/pages/code_of_conduct_page.dart';
 import 'package:flutterengagemumbai/services/launch_string.dart';
 import 'package:flutterengagemumbai/utils/social_urls.dart';
 import 'package:flutterengagemumbai/services/responsiveness.dart';
+import 'package:flutterengagemumbai/utils/assets.dart';
 
 class FooterPage extends StatelessWidget {
   @override
@@ -53,6 +54,14 @@ class FooterPage extends StatelessWidget {
               ],
             ),
             Expanded(child: SizedBox.shrink()),
+            Center(
+              child: Image.asset(
+                Assets.madeWithFlutter,
+                scale: 2.3,
+                filterQuality: FilterQuality.high,
+              ),
+            ),
+            SizedBox(height: 20.0),
             Align(
               alignment: Alignment.center,
               child: Text(
@@ -113,6 +122,14 @@ class FooterPage extends StatelessWidget {
               ],
             ),
             Expanded(child: SizedBox.shrink()),
+            Center(
+              child: Image.asset(
+                Assets.madeWithFlutter,
+                scale: 1.7,
+                filterQuality: FilterQuality.high,
+              ),
+            ),
+            SizedBox(height: 30.0),
             Align(
               alignment: Alignment.center,
               child: Text(
@@ -130,8 +147,8 @@ class FooterPage extends StatelessWidget {
     else {
       return Container(
         width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height / 3.5,
-        padding: EdgeInsets.symmetric(horizontal: 5.0, vertical: 7.0),
+        height: MediaQuery.of(context).size.height / 2,
+        padding: EdgeInsets.symmetric(vertical: 30.0),
         child: Column(
          mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -141,7 +158,7 @@ class FooterPage extends StatelessWidget {
                 fontWeight: FontWeight.w500,
               ),
             ),
-            SizedBox(height: 15.0),
+            SizedBox(height: 7.0),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -153,33 +170,37 @@ class FooterPage extends StatelessWidget {
                   ),
                   child: Text(
                     "Code of Conduct",
-                    style: Theme.of(context).textTheme.subtitle2!.copyWith(
-                      fontWeight: FontWeight.w600,
-                    ),
+                    style: Theme.of(context).textTheme.subtitle2,
                   ),
                 ),
-                SizedBox(width: 10.0),
+                SizedBox(width: 15.0),
                 TextButton(
                   onPressed: () => Launch.launchUrl(
                     SocialUrls.communityGuildline,
                   ),
                   child: Text(
                     "Community Guidelines",
-                    style: Theme.of(context).textTheme.subtitle2!.copyWith(
-                      fontWeight: FontWeight.w600,
-                    ),
+                    style: Theme.of(context).textTheme.subtitle2,
                   ),
                 ),
               ],
             ),
             Expanded(child: SizedBox.shrink()),
+            Center(
+              child: Image.asset(
+                Assets.madeWithFlutter,
+                scale: 3.0,
+                filterQuality: FilterQuality.high,
+              ),
+            ),
+            SizedBox(height: 30.0),
             Align(
-              alignment: Alignment.center,
+              alignment: Alignment.bottomCenter,
               child: Text(
                 "All The Flutter and related technology logos are copyright of Google LLC. \nFlutter Mumbai is not affiliated with or otherwise sponsored by Google LLC.",
                 textAlign: TextAlign.center,
                 style: Theme.of(context).textTheme.subtitle2!.copyWith(
-                   fontSize: 10.0,
+                   fontSize: 9.0,
                 ),
               ),
             ),
