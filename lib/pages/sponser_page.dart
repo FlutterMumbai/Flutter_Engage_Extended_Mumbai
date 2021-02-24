@@ -76,25 +76,25 @@ class SponserPage extends StatelessWidget {
     else {
       return Container(
         width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height / 1.3,
+        height: MediaQuery.of(context).size.height,
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
               "Powered by",
               style: Theme.of(context).textTheme.headline4,
             ),
-            //SizedBox(height: 20.0),
+            SizedBox(height: 70.0),
             Image.asset(
               Assets.flutterLogo,
               scale: 12.0,
             ),
-           // SizedBox(height: 30.0),
+           SizedBox(height: 40.0),
             Image.asset(
               Assets.googleDevelopers,
               scale: 1.7,
             ),
-            // SizedBox(height: 20.0),
+            SizedBox(height: 40.0),
             Image.asset(
               Assets.jetBrain,
               scale: 17.0,
