@@ -82,7 +82,7 @@ class EventSchedulePage extends StatelessWidget {
     } else {
       return Container(
         width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height / 1.7,
+        height: MediaQuery.of(context).size.height,
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
