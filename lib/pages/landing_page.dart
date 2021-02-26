@@ -70,7 +70,7 @@ class LandingPage extends StatelessWidget {
                   ),
                   SizedBox(height: 3.0),
                   Text(
-                    "19:00 - 21:00 IST",
+                    "20:30 - 22:30 IST",
                     style: Theme.of(context).textTheme.headline5!.copyWith(
                           color: CustomColors.DarkGrey,
                         ),
@@ -171,7 +171,7 @@ class LandingPage extends StatelessWidget {
                   ),
                   SizedBox(height: 3.0),
                   Text(
-                    "19:00 - 21:00 IST",
+                    "20:30 - 22:30 IST",
                     style: Theme.of(context).textTheme.headline5!.copyWith(
                           color: CustomColors.DarkGrey,
                         ),
@@ -223,6 +223,7 @@ class LandingPage extends StatelessWidget {
           children: [
             Container(
               width: MediaQuery.of(context).size.width,
+              height: MediaQuery.of(context).size.height / 1.9,
               padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 35.0),
               child: Center(
                 child: Image.asset(
@@ -272,7 +273,7 @@ class LandingPage extends StatelessWidget {
                   ),
                   SizedBox(height: 3.0),
                   Text(
-                    "19:00 - 21:00 IST",
+                    "20:30 - 22:30 IST",
                     style: Theme.of(context).textTheme.subtitle1!.copyWith(
                           color: CustomColors.DarkGrey,
                         ),
