@@ -12,7 +12,7 @@ class SocialUrls {
       "https://www.linkedin.com/company/fluttermumbai";
   static const String github = "https://github.com/FlutterMumbai";
   static const String communityGuildline = "https://events.flutter.dev/engage/guidelines";
-  static const String rsvpUrl = "";
+  static const String rsvpUrl = "https://www.meetup.com/Mumbai-Flutter/events/276603419/";
 
   // hash tag  urls
 static const String engageTagUrl = "https://twitter.com/search?q=%23FlutterEngage";
