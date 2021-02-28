@@ -6,7 +6,12 @@ import 'package:flutterengagemumbai/pages/social_page.dart';
 import 'package:flutterengagemumbai/pages/sponser_page.dart';
 
 // ignore: must_be_immutable
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
+  @override
+  _HomeState createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
   final ScrollController _controller = ScrollController();
 
   List<Widget> buildList = [
@@ -27,8 +32,8 @@ class Home extends StatelessWidget {
           shrinkWrap: true,
           padding: const EdgeInsets.all(0.0),
           physics: BouncingScrollPhysics(),
+          scrollDirection: Axis.vertical,
           controller: _controller,
-
           children: buildList,
         ),
       ),
