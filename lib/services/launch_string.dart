@@ -1,6 +1,4 @@
-
-
-import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher.dart' show canLaunch, launch;
 
 class Launch {
   static launchUrl(String url) async {
