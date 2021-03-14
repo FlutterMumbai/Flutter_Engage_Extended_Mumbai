@@ -163,7 +163,7 @@ class LargeScreenEventAgenda extends StatelessWidget {
         LargeScreenEventDetials(
           time: "09:45 PM IST",
           eventName: "QnA Session - (#AskFlutterMumbai)",
-          speakerName: "Chriss Sells",
+          speakerName: "Chris Sells",
         ),
         SizedBox(height: 30),
         LargeScreenEventDetials(
@@ -264,7 +264,7 @@ class MediumScreenEventAgenda extends StatelessWidget {
         MediumScreenEventDetails(
           time: "09:45 PM IST",
           eventName: "QnA Session - (#AskFlutterMumbai)",
-          speakerName: "Chriss Sells",
+          speakerName: "Chris Sells",
         ),
         SizedBox(height: 30),
         MediumScreenEventDetails(
@@ -379,7 +379,7 @@ class SmallScreenEventAgenda extends StatelessWidget {
           SmallScreenEventDetails(
             time: "09:45",
             eventName: "QnA Session - (#AskFlutterMumbai)",
-            speakerName: "Chriss Sells",
+            speakerName: "Chris Sells",
           ),
           SizedBox(
             height: 15,
