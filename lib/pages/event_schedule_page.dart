@@ -208,7 +208,9 @@ class LargeScreenEventDetials extends StatelessWidget {
               Text(
                 eventName,
                 textAlign: TextAlign.start,
-                style: Theme.of(context).textTheme.headline4,
+                style: Theme.of(context).textTheme.headline4!.copyWith(
+                      fontSize: 30,
+                    ),
               ),
               speakerName != null
                   ? Text(
